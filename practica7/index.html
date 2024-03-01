@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones</title>
+
+    <style>
+        body {
+            animation: colores 7s infinite;
+        }
+
+            @keyframes colores{
+                0% {
+                    background-color: red;
+                }
+                100% {
+                    background-color: blue;
+                }
+            }
+            .cuadroBlanco {
+                width: 100px;
+                height: 100px;
+                background-color: white;
+                position: absolute;
+                animation: mover 2s infinite;
+                top: 100px;
+                left:150px;
+            }
+
+            .cuadroGris {
+                width: 100px;
+                height: 100px;
+                background-color: grey;
+                position: absolute;
+                animation: mover 2s infinite;
+                top: 100px;
+                left:500px;
+            }
+
+
+            .cuadroNegro {
+                width: 100px;
+                height: 100px;
+                background-color: black;
+                position: absolute;
+                animation: mover 2s infinite;
+                top: 100px;
+                right: 500px;
+            }
+
+
+            .cuadroVerde {
+                width: 100px;
+                height: 100px;
+                background-color: green;
+                position: absolute;
+                animation: mover 2s infinite;
+                top: 100px;
+                right: 150px;
+            }
+
+            .cuadroNaranja {
+                width: 100px;
+                height: 100px;
+                background-color: orange;
+                position: absolute;
+                animation: mover2 2s infinite;
+                bottom: 100px;
+                left: 325px;
+            }
+
+            .cuadro2 {
+                width: 100px;
+                height: 100px;
+                background-color: paleturquoise;
+                position: absolute;
+                animation: mover2 2s infinite;
+                bottom: 100px;
+                right: 325px;
+            }
+
+            .cuadro3 {
+                width: 100px;
+                height: 100px;
+                background-color: teal;
+                position: absolute;
+                animation: mover2 2s infinite;
+                bottom: 100px;
+                left: 675px;
+            }
+            
+            @keyframes mover {
+                from{
+                    top: 0px;
+                }
+                to{
+                    top: 500px;
+                }
+            }
+
+            @keyframes mover2 {
+                from{
+                    bottom:0px;
+                }
+                to{
+                    bottom: 500px;
+                }
+            }
+
+        
+    </style>
+
+</head>
+<body>
+    <div class="cuadroBlanco"></div>
+    <div class="cuadroGris"></div>
+    <div class="cuadroNegro"></div>
+    <div class="cuadroVerde"></div>
+
+    <div class="cuadroNaranja"></div>
+    <div class="cuadro2"></div>
+    <div class="cuadro3"></div>
+
+    
+
+
+
+</body>
+</html>
