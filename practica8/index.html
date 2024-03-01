@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transformación 3D en CSS</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+  .container {
+    height: 100%;
+    perspective: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+  }
+
+  .box {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: #3498db;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+  }
+
+  .container:hover .box {
+    transform: rotateY(180deg);
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+</div>
+
+</body>
+</html>
